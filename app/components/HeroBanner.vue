@@ -9,6 +9,8 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-    <h1>{{ props.titlePage }}</h1>
-    <p>{{ props.description }}</p>
+    <div class="flex flex-col gap-[24px] py-[100px]">
+        <h1 class="text-[78px] font-bold text-center">{{ props.titlePage }}</h1>
+        <p class="text-[14px] font-medium text-center">{{ props.description }}</p>
+    </div>
 </template>

@@ -50,16 +50,18 @@ const items = ref<NavigationMenuItem[]>([
 
 <template>
   <header class="flex items-center justify-between w-full">
-    <div class="flex items-center">
+    <div class="flex items-center gap-[14px]">
       <NuxtImg 
-      src="/Frame.svg" />
-      <p>Squaree</p>
+      src="/Frame.svg" 
+      class="w-[24px] h-[24px]"/>
+      <p class="text-[16px] font-bold">Squaree</p>
     </div>
     <div>
-      <UNavigationMenu arrow content-orientation="vertical" :items="items" class="w-full justify-center" />
+      <UNavigationMenu arrow content-orientation="vertical" :items="items" class="w-full justify-center" :ui="{link: 'text-[#242424]'}"/>
     </div>
     <div>
         <NuxtImg 
+        class="w-[24px] h-[24px]"
         src="/Iconly-outline.svg" />
     </div>
   </header>
