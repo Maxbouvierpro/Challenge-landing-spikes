@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<{
         <h1 class="text-[78px] font-bold text-center">{{ props.titlePage }}</h1>
         <p class="text-[14px] font-medium text-center">{{ props.description }}</p>
     </div>
-    <div class="flex items-center justify-between w-full">
+    <div class="flex flex-col md:flex-row flex-wrap items-center justify-between w-full">
         <ImagesHero />
     </div>
     <div class="text-center mt-[40px]">

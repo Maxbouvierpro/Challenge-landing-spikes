@@ -10,7 +10,7 @@
             The expectation that productivity should always lead to tangible results or accomplishments & notion that certain types of work or activities are more valuable or productive than others.
         </p>
         <NuxtImg src="/Group-1410103388.svg" class="w-full max-w-[712px]"/>
-        <div class="grid grid-cols-3 center">
+        <div class="flex flex-wrap justify-center gap-[16px] center">
             <div class="flex flex-col items-center text-center">
                 <h3 class="font-bold text-[38px]">200%</h3>
                 <p class="opacity-[0.5]">Increase in new pipeline generated</p>
@@ -24,7 +24,7 @@
                 <p class="opacity-[0.5]">Decrease in cost per lead</p>
             </div>
         </div>
-        <UButton class="bg-[#F2B53C] text-[12px] font-bold tracking-wide rounded-full py-[12px]">
+        <UButton class="bg-[#F2B53C] hover:bg-black text-[12px] font-bold tracking-wide rounded-full px-[24px] py-[12px]">
             Explore our way >
         </UButton>
     </div>

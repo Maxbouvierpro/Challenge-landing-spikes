@@ -79,7 +79,7 @@ const testimonials = [
           title: 'text-[24px] font-bold',
           description: 'before:content-[open-quote] after:content-[close-quote] line-clamp-3 my-[16px]'
         }"
-        class="w-128 shrink-0 bg-[#F6F6F6] p-[32px]"
+        class="w-128 shrink-0 bg-[#F6F6F6] p-[32px] border border-[#3E3E3E15]"
       >
         <template #footer>
           <UUser v-bind="testimonial.user" size="xl" :ui="{ description: 'line-clamp-1' }" />
@@ -101,7 +101,7 @@ const testimonials = [
           title: 'text-[24px] font-bold',
           description: 'before:content-[open-quote] after:content-[close-quote] line-clamp-3 my-[16px]'
         }"
-        class="w-128 shrink-0 bg-[#F6F6F6] p-[32px]"
+        class="w-128 shrink-0 bg-[#F6F6F6] p-[32px] border border-[#3E3E3E15]"
         >
         <template #footer>
           <UUser v-bind="testimonial.user" size="xl" :ui="{ description: 'line-clamp-1' }" />

@@ -7,6 +7,8 @@
       <KnowYourProductivity class="w-full max-w-[1200px] py-[120px]"/> 
       <SeamlessIntegration class="w-full py-[120px]"/>
       <WhatTheySay class="w-full max-w-[1000px] py-[120px]"/>
+      <PricingTable class="w-full py-[120px] flex flex-col items-center" />
+      <FooterComponent />
     </div>
   </div>
 </template>

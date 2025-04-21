@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px] px-[25px]">
         <div>
             <h2 class="text-[48px] font-bold">Know your productivity by squaree</h2>
             <p class="text-[14px] font-medium">

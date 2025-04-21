@@ -4,46 +4,40 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Features',
-    to: '/features',
     children: [
       {
         label: 'Introduction',
-        description: 'Fully styled and customizable components for Nuxt.',
+        description: 'Squaree helps you grow your business with powerful tools and insights.',
       },
       {
-        label: 'Installation',
-        description: 'Learn how to install and configure Nuxt UI in your application.',
+        label: 'Growth Analytics',
+        description: 'Track and optimize your business growth with real-time analytics.',
       },
       {
-        label: 'Icons',
-        description: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+        label: 'Productivity Tools',
+        description: 'Streamline your workflow and boost team efficiency.',
       }
     ]
   },
   {
     label: 'Resources',
-    to: '/composables',
     children: [
       {
-        label: 'defineShortcuts',
-        description: 'Define shortcuts for your application.',
-        to: '/composables/define-shortcuts'
+        label: 'Integration',
+        description: 'Seamlessly connect with leading apps like Slack, Figma, and Notion.',
       },
       {
-        label: 'useOverlay',
-        description: 'Display a modal/slideover within your application.',
-        to: '/composables/use-overlay'
+        label: 'Support',
+        description: 'Get help and guidance to maximize your Squaree experience.',
       },
       {
-        label: 'useToast',
-        description: 'Display a toast within your application.',
-        to: '/composables/use-toast'
+        label: 'Documentation',
+        description: 'Detailed guides and API documentation for developers.',
       }
     ]
   },
   {
     label: 'Contact Sales',
-    to: '/contact'
   }
 ])
 </script>
@@ -57,12 +51,10 @@ const items = ref<NavigationMenuItem[]>([
       <p class="text-[16px] font-bold">Squaree</p>
     </div>
     <div>
-      <UNavigationMenu arrow content-orientation="vertical" :items="items" class="w-full justify-center" :ui="{link: 'text-[#242424]'}"/>
+      <UNavigationMenu arrow content-orientation="vertical" :items="items" class="w-full justify-center" :ui="{link: 'text-[#242424] w-full', list:'md:flex-row flex-col'}"/>
     </div>
     <div>
-        <NuxtImg 
-        class="w-[24px] h-[24px]"
-        src="/Iconly-outline.svg" />
+      <UContentSearchButton />
     </div>
   </header>
 </template>

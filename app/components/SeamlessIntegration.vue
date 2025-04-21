@@ -28,7 +28,7 @@ const iconsApps: { label: string; src: string; line: number }[] = [
 ]
 </script>
 <template>
-    <div class="grid grid-cols-2 gap-[16px] items-center"> 
+    <div class="flex flex-col md:grid md:grid-cols-2 gap-[16px] items-center"> 
         
         <div>
             <UPageMarquee class="w-full max-w-[1000px] mt-[32px]" :ui="{ root: '[--gap:--spacing(16)]', content: 'w-auto py-1' }">
@@ -49,8 +49,8 @@ const iconsApps: { label: string; src: string; line: number }[] = [
             </UPageMarquee>
         </div>
 
-        <div class="flex flex-col gap-[16px] w-full max-w-[480px]">
-            <h2 class="text-[48px] font-bold">Seamless integration with best apps</h2>
+        <div class="flex flex-col gap-[16px] w-full max-w-[480px] md:text-left text-center">
+            <h2 class="text-[48px] font-bold md:text-left text-center">Seamless integration with best apps</h2>
             <p class="text-[14px]">What ever you use, we integrate with the best of best</p>
         </div>
 

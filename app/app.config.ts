@@ -1,5 +1,4 @@
 export default defineAppConfig({
-  // https://ui.nuxt.com/getting-started/theme#design-system
   ui: {
     colors: {
       primary: 'emerald',
@@ -7,9 +6,18 @@ export default defineAppConfig({
     },
     button: {
       defaultVariants: {
-        // Set default button color to neutral
         // color: 'neutral'
       }
-    }
+    },
+
+    switch: {
+      variants: {
+        color: {
+          primary: {
+            base: 'data-[state=checked]:bg-[#F2B53C] dark:data-[state=checked]:bg-[#F2B53C] focus-visible:outline-[#F2B53C]'
+          }
+        }
+      }
+    },
   }
 })
