@@ -3,6 +3,7 @@
 </script>
 
 <template>
+    <div class="flex flex-col md:flex-row flex-wrap items-center justify-between w-full">
         <div class="bg-[url(Rectangle-6821.png)] bg-cover bg-no-repeat w-[290px] h-[290px] relative">
             <UButton class="bg-[#141414] text-[12px] uppercase font-bold tracking-wide rounded-full absolute top-[30px] left-[30px]">
                 Profile
@@ -53,13 +54,13 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-end gap-[24px] bg-[url(Group-1171274871.svg)] bg-size-[75%] bg-right bg-no-repeat bg-[#DDD6CF] py-[30px] px-0 relative rounded-l-lg h-[434px]">
+        <div class="flex flex-col justify-end gap-[24px] bg-[url(Group-1171274871.svg)] rounded-[16px] bg-size-[100%] md:bg-size-[75%] bg-right bg-no-repeat bg-[#DDD6CF] py-[30px] px-0 relative rounded-l-lg w-full md:w-full md:max-w-[400px] h-[434px]">
                         
             <UButton class="bg-[#B1ABA6] text-[12px] uppercase absolute top-[30px] left-[30px] font-bold tracking-wide rounded-full">
                 Value
             </UButton>
             
-            <UButton class="bg-[#141414] text-[12px] uppercase absolute top-[30px] right-[-50px] font-bold tracking-wide rounded-full">
+            <UButton class="bg-[#141414] text-[12px] uppercase absolute top-[30px] right-[10px] md:top-[30px] md:right-[30px] font-bold tracking-wide rounded-full">
                 DAILY
             </UButton>
             <div class="flex flex-col items-center gap-[14px]">
@@ -77,4 +78,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </template>

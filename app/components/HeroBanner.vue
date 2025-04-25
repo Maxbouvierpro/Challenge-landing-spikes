@@ -10,11 +10,11 @@ const props = withDefaults(defineProps<{
 
 <template>
     <div class="flex flex-col gap-[24px] py-[100px] w-full max-w-[712px]">
-        <h1 class="text-[78px] font-bold text-center">{{ props.titlePage }}</h1>
+        <h1 class="md:text-[78px] text-[48px] font-bold text-center">{{ props.titlePage }}</h1>
         <p class="text-[14px] font-medium text-center">{{ props.description }}</p>
     </div>
     <div class="flex flex-col md:flex-row flex-wrap items-center justify-between w-full">
-        <ImagesHero />
+        <ImagesHero class="p-[30px]"/>
     </div>
     <div class="text-center mt-[40px]">
         <h2 class="text-[20px] font-medium opacity-[0.5]">We have the fast paced growing companies with us</h2>
